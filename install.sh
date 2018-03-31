@@ -1,7 +1,7 @@
 #!/bin/bash
 
 echo "== Cloning installation"
-git -C /opt/easy-nano-node pull || git clone https://github.com/nanotools/easy-nano-node.git /opt/easy-nano-node
+git -C ./easy-nano-node pull || git clone https://github.com/nanotools/easy-nano-node.git ./easy-nano-node
 
 echo "== Starting installation"
-sudo bash /opt/easy-nano-node/enn/setup.sh
+bash ./easy-nano-node/enn/setup.sh
