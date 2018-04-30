@@ -42,7 +42,9 @@ services:
      - "7075:7075"
      - "::1:7076:7076"
     volumes:
-     - "~:/root"
+     - "~/Library/RaiBlocks/:/root/RaiBlocks/" # Mac
+     # - "~/.RaiBlocks/:/root/RaiBlocks/" # Linux
+     # - "%localappdata%\\.RaiBlocks/:/root/RaiBlocks/" # Windows
 ```
 
 7. Nice! Now execute `sudo docker-compose up -d` to start everything.
